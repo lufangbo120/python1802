@@ -1,0 +1,52 @@
+# coding: utf-8
+from sqlalchemy import CHAR, Column, DateTime, VARCHAR, text
+from sqlalchemy.dialects.oracle import NUMBER
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+metadata = Base.metadata
+
+
+class TBscStockinfo(Base):
+    __tablename__ = 't_bsc_stockinfo'
+
+    l_date = Column(NUMBER(8, 0, False), primary_key=True, nullable=False)
+    vc_inter_code = Column(VARCHAR(8), primary_key=True, nullable=False)
+    l_market = Column(VARCHAR(50))
+    vc_report_code = Column(VARCHAR(20))
+    vc_stock_name = Column(VARCHAR(100))
+    c_stock_type = Column(VARCHAR(2))
+    c_asset_type = Column(CHAR(1))
+    vc_asset_relative_code = Column(VARCHAR(8))
+    vc_currency = Column(VARCHAR(3))
+    vc_mixed_type = Column(VARCHAR(100))
+    vc_international_code = Column(VARCHAR(32))
+    vc_busin_classes = Column(VARCHAR(512))
+    c_default_price = Column(CHAR(1))
+    en_reference_price = Column(VARCHAR(50))
+    l_publish_date = Column(NUMBER(8, 0, False))
+    l_turnover_date = Column(NUMBER(8, 0, False))
+    l_total_lock_day = Column(VARCHAR(50))
+    l_left_lock_days = Column(VARCHAR(50))
+    d_updatetime = Column(DateTime, server_default=text("""\
+sysdate
+"""))
+    vc_assign_code = Column(VARCHAR(20))
+    vc_md5 = Column(VARCHAR(32))
+
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)
+    def __str__(self):
+        return  str(self.l_date)+str(self.vc_inter_code)+'$*'+str(self.vc_md5)

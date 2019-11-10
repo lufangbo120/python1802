@@ -1,0 +1,10 @@
+{"485":{"vc_currency": {"empty": false, "allowed": ["CNY", "CHF", "CAD", "MYR", "RUB", "DKK", "NOK", "SEK", "MOP", "PHP", "THB",
+  "USD", "KRW", "FRF", "NLG", "BEF", "ITL", "ESP", "FIM", "DEM", "TWD", "IDR", "HKD", "BRL", "ZAR", "INR", "AED", "ATS", "BOB", "CSK"
+, "IEP", "KGS", "KZT", "EUR", "LUF", "MMK", "PTE", "TRY", "VND", "HUF", "MXN", "PLN", "SAR", "ILS", "JPY", "GBP", "AUD", "NZD", "SGD"]}
+, "vc_kind": {"empty": false, "allowed":
+[1, 10, 11, 12, 13, 14, 15, 16, 17, 2, 3, 4, 5, 7, 8, 9]}, "vc_company_code": {"empty": false}},
+"771":{"vc_code":{"empty":false},"vc_sname": {"isduplication": true}}
+
+
+
+}
